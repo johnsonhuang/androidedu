@@ -1,0 +1,53 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FCFCFC"
+    >
+
+
+    <Button
+        android:id="@+id/charge_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/charge" />
+
+    <ImageView 
+        android:id="@+id/succ"
+        android:src="@drawable/succ"
+        android:contentDescription="@string/succ_tag"
+        android:layout_below="@id/charge_button"
+        android:layout_alignLeft="@id/charge_button"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+    
+    <TextView 
+        android:id="@+id/succ_text"
+        android:layout_toRightOf="@id/succ"
+        android:layout_below="@id/charge_button"
+        android:layout_marginTop="18dp"
+        android:text="@string/charge_succ_text"
+        android:layout_width="300dp"
+		android:layout_height="wrap_content" />
+    
+    <TextView 
+        android:id="@+id/notice"
+        android:layout_below="@id/succ_text"
+        android:layout_marginTop="8dp"
+        android:layout_alignLeft="@id/succ_text"
+        android:text="@string/succ_notice"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+    
+    
+    
+    
+    
+</RelativeLayout>
+

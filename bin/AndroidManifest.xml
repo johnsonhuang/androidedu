@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alipay.mobile.educard"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.alipay.mobile.educard.ui.IndexActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.alipay.mobile.educard.ui.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.alipay.mobile.educard.ui.OldUserMainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.alipay.mobile.educard.ui.SureChargeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        
+        <activity
+            android:name="com.alipay.mobile.educard.ui.SuccessActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        
+        
+    </application>
+
+</manifest>

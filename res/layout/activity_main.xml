@@ -1,0 +1,141 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#999999"
+    >
+    <Button
+        android:id="@+id/chargeButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/charge" />
+    
+    <Spinner android:id="@+id/mySpinner"
+		android:layout_width = "fill_parent"
+		android:layout_height="40dp"
+		android:layout_below="@id/chargeButton"
+		android:layout_alignLeft="@id/chargeButton"
+        android:layout_marginRight="10dp"
+		android:layout_marginTop="10dp"
+		android:drawSelectorOnTop="true"
+		android:prompt="@string/planet_prompt" />
+    
+    
+    <EditText 
+        android:id="@+id/cardNum"
+        android:hint="@string/cardnumber"
+        android:inputType="number"
+        android:layout_below="@id/mySpinner"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@id/mySpinner"
+        android:layout_alignRight="@id/mySpinner"
+        android:layout_marginTop="8dp"
+		android:textColor = "#000000" />
+    
+    
+    <TextView 
+        android:id="@+id/cardnubwarning"
+        android:layout_alignLeft="@id/cardNum"
+        android:layout_below="@id/cardNum"
+        android:layout_marginTop="8dp"
+        android:text="@string/nocardwarning"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+    
+        
+    
+    
+    <EditText 
+        android:id="@+id/name"
+        android:hint="@string/name"
+        android:layout_below="@id/cardnubwarning"
+        android:layout_alignLeft="@id/cardnubwarning"
+        android:layout_alignRight="@id/chargeButton"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textColor = "#000000" />
+    
+    <TextView 
+        android:id="@+id/nameTag"
+        android:layout_below="@id/name"
+        android:text="@string/namewarnig"
+        android:layout_alignLeft="@id/name"
+        android:layout_alignRight="@id/name"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+		android:layout_height="wrap_content" />
+    
+    
+    
+    <EditText 
+        android:id="@+id/amount"
+        android:hint="@string/amount"
+        android:layout_below="@id/nameTag"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@id/nameTag"
+		android:layout_alignRight="@id/nameTag"
+		android:layout_marginTop="10dp"
+		android:textColor = "#000000" 
+		
+		android:inputType="number"/>
+    
+    
+    
+    <TextView 
+        android:id="@+id/amountTag"
+        android:layout_below="@id/amount"
+        android:text="@string/amountwarning"
+        android:layout_width="fill_parent"
+		android:layout_height="20dp"
+		android:layout_alignLeft="@id/amount"
+		android:layout_alignRight="@id/amount"
+		android:layout_marginTop="10dp" />
+    
+    <CheckBox 
+        android:id="@+id/smscheckbox"
+        android:layout_below="@id/amountTag"
+        android:layout_alignLeft="@id/amountTag"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="6dp"
+        />
+    <TextView 
+        android:id="@+id/smsnotice"
+        android:layout_below="@id/amountTag"
+        android:text="@string/sms"
+        android:layout_width="wrap_content"
+		android:layout_height="30dp"
+		android:layout_toRightOf="@id/smscheckbox"
+		android:layout_marginTop="2dp" />
+    <EditText 
+        android:id="@+id/mobile"
+        android:hint="@string/mobile"
+        android:layout_below="@id/smscheckbox"
+        android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:layout_alignLeft="@id/nameTag"
+		android:layout_alignRight="@id/amount"
+		android:layout_marginTop="8dp"
+		android:textColor ="#000000"
+		android:visibility="invisible" 
+		/>
+    
+    
+    <Button
+        android:id="@+id/surebtn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FB8318"
+        android:text="@string/nextStep" />
+    
+    
+</RelativeLayout>

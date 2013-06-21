@@ -1,0 +1,132 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FCFCFC"
+    >
+
+
+    <Button
+        android:id="@+id/charge_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/charge" />
+
+    <!-- 学校 -->
+    <TextView 
+        android:id="@+id/school_label"
+        android:layout_alignLeft="@id/charge_button"
+        android:layout_below="@id/charge_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/school_label"
+        />
+    <TextView 
+        android:id="@+id/school"
+        android:layout_toRightOf="@id/school_label"
+        android:layout_below="@id/charge_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上海大学"
+        />
+    
+    
+    <!-- 卡号 -->
+    <TextView 
+        android:id="@+id/card_label"
+        android:layout_alignLeft="@id/charge_button"
+        android:layout_below="@id/school_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card_label"
+        />
+    <TextView 
+        android:id="@+id/card"
+        android:layout_toRightOf="@id/card_label"
+        android:layout_below="@id/school_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1212313228"
+        />
+    
+    
+    
+    <!-- 姓名 -->
+    <TextView 
+        android:id="@+id/name_label"
+        android:layout_alignLeft="@id/charge_button"
+        android:layout_below="@id/card_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_label"
+        />
+    <TextView 
+        android:id="@+id/name"
+        android:layout_toRightOf="@id/name_label"
+        android:layout_below="@id/card_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="威登"
+        />
+    
+    
+    
+     <!-- 充值金额 -->
+    <TextView 
+        android:id="@+id/amount_label"
+        android:layout_alignLeft="@id/charge_button"
+        android:layout_below="@id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount_label"
+        />
+    <TextView 
+        android:id="@+id/amount"
+        android:layout_toRightOf="@id/amount_label"
+        android:layout_below="@id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="400"
+        />
+    
+    
+    
+    
+         <!-- 手机号码 -->
+    <TextView 
+        android:id="@+id/phone_label"
+        android:layout_alignLeft="@id/charge_button"
+        android:layout_below="@id/amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_label"
+        />
+    <TextView 
+        android:id="@+id/phone_number"
+        android:layout_toRightOf="@id/phone_label"
+        android:layout_below="@id/amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13581800672"
+        />
+    
+    
+    
+    
+    <Button
+        android:id="@+id/sure_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/charge_button"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/phone_label"
+        android:background="#FB8318"
+        android:text="@string/sure_text" />
+    
+    
+</RelativeLayout>
+
