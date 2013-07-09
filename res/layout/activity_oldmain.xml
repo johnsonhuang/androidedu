@@ -8,15 +8,39 @@
     android:paddingTop="@dimen/activity_vertical_margin" >
 
     
-<EditText 
-        android:id="@+id/old_index"
-        android:hint="@string/test"
-        android:inputType="number"
-        android:layout_below="@id/mySpinner"
+    <Button
+        android:id="@+id/charge_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/charge" />
+    
+    
+    
+	<TextView
+        android:id="@+id/school_name"
+        android:layout_alignLeft="@id/charge_button"
+        android:layout_below="@id/charge_button"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+		android:layout_height="wrap_content" 
+		android:text="张三（尾号0111）"
+		/>
+	
+	
+	<EditText 
+        android:id="@+id/amount"
+        android:hint="@string/amount"
+        android:layout_below="@id/school_name"
         android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-		android:textColor = "#000000" />
-
+		android:layout_alignLeft="@id/nameTag"
+		android:layout_alignRight="@id/nameTag"
+		android:layout_marginTop="10dp"
+		android:textColor = "#000000" 
+		
+		android:inputType="number"/>
 
 </RelativeLayout>

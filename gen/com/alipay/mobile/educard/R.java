@@ -27,7 +27,7 @@ public final class R {
         public static final int succ=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f08001b;
+        public static final int action_settings=0x7f080021;
         public static final int amount=0x7f080008;
         public static final int amountTag=0x7f080009;
         public static final int amount_label=0x7f080017;
@@ -37,24 +37,30 @@ public final class R {
         public static final int cardnubwarning=0x7f080005;
         public static final int chargeButton=0x7f080002;
         public static final int charge_button=0x7f080000;
+        public static final int img=0x7f08001b;
+        public static final int img01=0x7f08001e;
+        public static final int img02=0x7f08001f;
+        public static final int img03=0x7f080020;
+        public static final int info=0x7f08001d;
         public static final int mobile=0x7f08000c;
         public static final int mySpinner=0x7f080003;
         public static final int name=0x7f080006;
         public static final int nameTag=0x7f080007;
         public static final int name_label=0x7f080016;
         public static final int notice=0x7f080011;
-        public static final int old_index=0x7f08000e;
         public static final int phone_label=0x7f080018;
         public static final int phone_number=0x7f080019;
         public static final int query_button=0x7f080001;
         public static final int school=0x7f080013;
         public static final int school_label=0x7f080012;
+        public static final int school_name=0x7f08000e;
         public static final int smscheckbox=0x7f08000a;
         public static final int smsnotice=0x7f08000b;
         public static final int succ=0x7f08000f;
         public static final int succ_text=0x7f080010;
         public static final int sure_btn=0x7f08001a;
         public static final int surebtn=0x7f08000d;
+        public static final int title=0x7f08001c;
     }
     public static final class layout {
         public static final int activity_index=0x7f030000;
@@ -62,6 +68,8 @@ public final class R {
         public static final int activity_oldmain=0x7f030002;
         public static final int activity_succ=0x7f030003;
         public static final int activity_surecharge=0x7f030004;
+        public static final int adapter=0x7f030005;
+        public static final int imageloader=0x7f030006;
     }
     public static final class menu {
         public static final int index=0x7f070000;
